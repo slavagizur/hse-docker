@@ -21,5 +21,5 @@ docker run --name mysql-server ./init_database.sql:/docker-entrypoint-initdb.d -
 Запуск приложения
 
 ```
-docker run sample-java -e MYSQL_URL= -e MYSQL_USER= -e MYSQL_PASSWORD=user
+docker run sample-java-jdbc -e MYSQL_URL= -e MYSQL_USER= -e MYSQL_PASSWORD=user
 ```
