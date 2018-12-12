@@ -27,7 +27,7 @@ docker run --name mysql-server --net=my_test_net -v $PWD/sql:/docker-entrypoint-
 Запуск приложения
 
 ```
- docker run --net=my_test_net -e MYSQL_URL=jdbc:mysql://10.0.2.15:3306/sample -e MYSQL_USER=user -e MYSQL_PASSWORD=user sample-java-jdbc
+docker run --net=my_test_net -e MYSQL_URL=jdbc:mysql://10.0.2.15:3306/sample -e MYSQL_USER=user -e MYSQL_PASSWORD=user sample-java-jdbc
 ```
 
 где 10.0.2.15 адрес PC
