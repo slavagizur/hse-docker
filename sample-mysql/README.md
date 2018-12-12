@@ -15,7 +15,7 @@ docker build -t sample-java-jdbc .
 Запуск базы данных
 
 ```
-docker run --name mysql-server -v sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=12345678 -e MYSQL_DATABASE=sample -e MYSQL_USER=user -e MYSQL_PASSWORD=user -d -p 3306:3306 mysql:latest 
+docker run --name mysql-server -v $PWD/sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=12345678 -e MYSQL_DATABASE=sample -e MYSQL_USER=user -e MYSQL_PASSWORD=user -d -p 3306:3306 mysql:latest 
 ```
 
 Запуск приложения

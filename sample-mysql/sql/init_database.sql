@@ -7,9 +7,9 @@ create table sample_data
 );
 
 insert into sample_data
- (text_field) values ('Значение первое');
+ (text_field) values ('First row');
 
 insert into sample_data
- (text_field) values ('Значение второе');
+ (text_field) values ('Second row');
 
 commit;
