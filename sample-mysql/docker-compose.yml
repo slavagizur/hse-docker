@@ -10,13 +10,9 @@ services:
       - MYSQL_USER=user
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
-    networks:
-      - my_test_net
   java:
     image: sample-java-jdbc:latest
     environment:
       - MYSQL_URL=jdbc:mysql://mysql:3306/sample
       - MYSQL_USER=user
       - MYSQL_PASSWORD=user
-    networks:
-      - my_test_net
