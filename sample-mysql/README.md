@@ -31,3 +31,10 @@ docker run --net=my_test_net -e MYSQL_URL=jdbc:mysql://10.0.2.15:3306/sample -e 
 ```
 
 где 10.0.2.15 адрес PC
+
+Запуск приложения через docker-compose
+
+```
+docker-compose up -d
+docker run -e MYSQL_URL=jdbc:mysql://10.0.2.15:3306/sample -e MYSQL_USER=root -e MYSQL_PASSWORD=12345678 sample-java-jdbc
+```
