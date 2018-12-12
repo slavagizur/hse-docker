@@ -21,7 +21,7 @@ docker network create --driver bridge my_test_net
 Запуск базы данных
 
 ```
-docker run --name mysql-server --net=my_test_net -v $PWD/sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=12345678 -e MYSQL_DATABASE=sample -e MYSQL_USER=user -e MYSQL_PASSWORD=user -d -p 3306:3306 mysql:latest 
+docker run --name mysql-server --net=my_test_net -v $PWD/sql:/docker-entrypoint-initdb.d -e MYSQL_ROOT_PASSWORD=12345678 -e MYSQL_DATABASE=sample -e MYSQL_USER=user -e MYSQL_PASSWORD=user -d -p 3306:3306 mysql:latest
 ```
 
 Запуск приложения
