@@ -1,3 +1,4 @@
 /target/
 !sample-java/.mvn/wrapper/maven-wrapper.jar
+!sample-mysql/.mvn/wrapper/maven-wrapper.jar
 
