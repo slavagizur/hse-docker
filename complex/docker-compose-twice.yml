@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  hse-webclient:
+    image: 'hse-webclient:latest'
+    ports:
+      - '80:80'
+  hse-webflux:
+    image: 'hse-webflux:latest'
+    ports:
+      - '8080:8080'
+  hse-calcagent:
+    image: 'hse-calcagent:latest'
+    environment:
+      calc.executor=KAFKA1
+  hse-calcagent2:
+    image: 'hse-calcagent:latest'
+    environment:
+      calc.executor=KAFKA2
