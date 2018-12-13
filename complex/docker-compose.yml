@@ -11,4 +11,4 @@ services:
   hse-calcagent:
     image: 'hse-calcagent:latest'
     environment:
-      calc.executor=KAFKA1
+      - calc.executor=KAFKA1
